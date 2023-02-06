@@ -1,0 +1,9 @@
+import random
+
+rolls = 0
+while True:
+    roll = random.randint(1, 6)
+    rolls += 1
+    if roll == 6:
+        break
+print("It took on average", rolls, "rolls to get a 6.")
