@@ -1,0 +1,51 @@
+# initial global variables
+key_found = False
+
+# introduction
+print("Welcome to the adventure game! You are in a house and you need to find a key to win.")
+
+# first choice
+print("You are in the living room. You see a couch and a door to the kitchen.")
+print("What do you want to do?")
+print("1. Look under the couch")
+print("2. Go to the kitchen")
+
+choice = input("Enter your choice: ")
+
+if choice == "1":
+  print("You find a key under the couch!")
+  key_found = True
+else:
+  # second choice
+  print("You are in the kitchen. You see a table and a door to the bedroom.")
+  print("What do you want to do?")
+  print("1. Look under the table")
+  print("2. Go to the bedroom")
+
+  choice = input("Enter your choice: ")
+
+  if choice == "1":
+    print("You find a key under the table!")
+    key_found = True
+  else:
+    # third choice
+    print("You are in the bedroom. You see a bed and a closet.")
+    print("What do you want to do?")
+    print("1. Look under the bed")
+    print("2. Open the closet")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+      print("You find a key under the bed!")
+      key_found = True
+    else:
+      # fourth choice
+      print("You open the closet and find a key hanging on a hook inside!")
+      key_found = True
+
+# final outcome
+if key_found:
+  print("Congratulations, you have found the key and won the game!")
+else:
+  print("Unfortunately, you could not find the key and lost the game. Better luck next time.")
